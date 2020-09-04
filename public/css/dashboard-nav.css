@@ -1,0 +1,149 @@
+.nav-toggle {
+    color: #fff;
+    line-height: 50px;
+    font-size: 10pt;
+    /*display: none;*/
+}
+
+.nav-toggle:hover {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.top-header {
+    height: 50px;
+    background: #690000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.sidemenu .logo {
+    display: block;
+    font-size: 46pt;
+    font-weight: 800;
+    color: #690000;
+    background: rgba(200, 200, 200, .3);
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.logo-wrapper {
+    width: 100%;
+    display: block;
+    margin: 20px 0;
+}
+
+.main-content {
+    left: 0;
+    transition: left 500ms;
+}
+
+.main-content {
+    left: 100px;
+}
+
+.main-content.collapsed {
+    left: 250px;
+}
+
+.sidemenu {
+    border-right: 1px solid #dfdfdf;
+    min-height: 100vh;
+    padding: 0;
+    width: 100px;
+    position: fixed;
+    /*left: -251px;*/
+    transition: 500ms;
+    z-index: 100;
+}
+
+.sidemenu ul.menu li a,
+.sidemenu ul.menu li i {
+    display: block;
+    text-align: center;
+}
+
+.sidemenu.active {
+    left: 0;
+    width: 250px !important;
+    max-width: 100% !important;
+}
+
+.sidemenu.active ul.menu li a,
+.sidemenu.active ul.menu li i {
+    display: inline !important;
+    text-align: left;
+    font-size: .8rem;
+}
+
+.sidemenu .sidemenu-title {
+    font-size: 16pt;
+    margin-top: 20px;
+    color: #690000;
+    text-align: center;
+}
+
+.sidemenu ul.menu {
+    display: block;
+    margin: 0;
+    padding: 0 0 0 10px;
+}
+
+.sidemenu ul.menu li {
+    position: relative;
+    list-style: none;
+}
+
+.sidemenu ul.menu li.active {
+    border-right: 3px solid #600000;
+}
+
+.sidemenu ul.menu>li {
+    margin: 10px 0;
+}
+
+.sidemenu ul.menu li a {
+    font-size: .8rem;
+    color: #888;
+}
+
+.sidemenu ul.menu li>i {
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+.sidemenu hr {
+    color: #ffffff;
+}
+
+.sidemenu .submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 700ms;
+    background: #f7f7f7;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.sidemenu.active .submenu {
+    position: relative;
+    left: 0;
+}
+
+.sidemenu .submenu.active {
+    max-height: 500px;
+}
+
+.sidemenu .submenu li {
+    padding: 5px 10px;
+}
+
